@@ -1,0 +1,36 @@
+@media(max-width:375px) {
+    .advice {
+        width: 375px;
+        padding: 0px 16px;
+    }
+
+    .advice-box {
+        width: 343px;
+        height: 315px;
+        padding: 40px 24px;
+        transform: translateX(16px);
+
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lines::before {
+        content: "";
+        display: block;
+        width: 122px;
+        height: 1px;
+    }
+
+    .lines::after {
+        content: "";
+        display: block;
+        width: 122px;
+        height: 1px;
+    }
+}

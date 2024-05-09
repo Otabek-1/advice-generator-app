@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --manrope: "Manrope";
+}
+
+body {
+    font-family: var(--manrope);
+    background-color: #202733;
+}
+
+.advice {
+    width: 100%;
+    height: 100vh;
+    background-color: #202733;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.advice-box {
+    width: 540px;
+    height: 332px;
+    border-radius: 15px;
+    background: #313A48;
+    box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.10);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.advice-number {
+    color: #53FFAA;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4.086px;
+    padding-bottom: 24px;
+}
+
+.advice-text {
+    max-width: 444px;
+    width: 100%;
+    color: #CEE3E9;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    padding-bottom: 40px;
+    height: 144px;
+}
+
+.line {
+    width: 20px;
+    height: 16px;
+    display: flex;
+}
+
+.lines{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    position: absolute;
+    top: 244px;
+}
+
+.lines::before {
+    content: "";
+    display: block;
+    width: 196px;
+    height: 1px;
+    background-color: #4F5D74;
+}
+
+.lines::after {
+    content: "";
+    display: block;
+    width: 196px;
+    height: 1px;
+    background-color: #4F5D74;
+}
+
+.refresh-btn{
+    position: absolute;
+    top: 300px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    transition: .5s;
+    border: none;
+}
+
+.refresh-btn:hover{
+    box-shadow: 0px 0px 40px 0px #53FFAA;
+}
+
+.refresh-btn:active{
+    box-shadow: 0px 0px 40px 0px #53FFAA;
+}
